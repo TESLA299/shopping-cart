@@ -1,13 +1,10 @@
 const cart_data = [
-  { title: "Title 1", id: 1, image: "https://via.placeholder.com/150" },
-  { title: "Title 2", id: 2, image: "https://via.placeholder.com/150" },
-  { title: "Title 3", id: 3, image: "https://via.placeholder.com/150" },
-  { title: "Title 4", id: 4, image: "https://via.placeholder.com/150" },
-  { title: "Title 5", id: 5, image: "https://via.placeholder.com/150" },
-  { title: "Title 6", id: 6, image: "https://via.placeholder.com/150" },
-  { title: "Title 7", id: 7, image: "https://via.placeholder.com/150" },
-  { title: "Title 8", id: 8, image: "https://via.placeholder.com/150" },
-  { title: "Title 9", id: 9, image: "https://via.placeholder.com/150" },
+  { title: "Title 1", id: 1, image: "https://plus.unsplash.com/premium_photo-1671467857554-513944c871c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZHVjfGVufDB8fDB8fHww" },
+  { title: "Title 2", id: 2, image: "https://media.istockphoto.com/id/2033779881/photo/real-estate-sign-in-front-of-a-house-with-a-garden-for-sale.webp?a=1&b=1&s=612x612&w=0&k=20&c=WG41ZiY23OWmTZeMggqwk45aAqv9Oen4J0PR6slAcI8=" },
+  { title: "Title 3", id: 3, image: "https://media.istockphoto.com/id/2157013271/photo/data-lake-big-data-warehouse-data-lake-platform-analytics-technology.webp?a=1&b=1&s=612x612&w=0&k=20&c=oJBFe2u3LlCRrKndgcSqSuQw_GQGvnoeP27Vo-bvDvk=" },
+  { title: "Title 4", id: 4, "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D" },
+  { title: "Title 5", id: 5, image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D" },
+  { title: "Title 6", id: 6, image: "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D" },
 ];
 if (!localStorage.getItem("email")) {
   window.location.href = "/login";
