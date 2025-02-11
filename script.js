@@ -13,6 +13,10 @@ if (!localStorage.getItem("email")) {
 let my_cart = [];
 const Cartcount = document.querySelector("#cart_count");
 const CartContainer = document.getElementById("cart_container");
+document.querySelector("#btn").addEventListener("click", () => {
+  localStorage.removeItem("email");
+  window.location.href = "/login";
+});
 cart_data.forEach((data) => {
   const main_div = document.createElement("div");
   main_div.className = "pb-8";
