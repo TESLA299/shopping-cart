@@ -10,17 +10,13 @@
   <body>
     <div class="container mx-auto grid grid-cols-12 gap-9">
       <div class="col-span-8">
-        <h1 class="text-3xl font-semibold my-5">Dessert</h1>
-        <ul class = "flex items-center gap-5"
-          <li>
-            <button id="btn" class="px-4 py-2 rounded bg-red-500 text-white">
-              Log Out
-            </button>
-          </li>
-          
-          
-          </ul>
-        
+        <div class="w-full py-2 px-4 flex justify-between items-center gap-9">
+          <h1 class="text-3xl font-semibold my-5">Dessert</h1>
+          <button id="btn" class="px-4 py-2 rounded bg-red-500 text-white">
+            Log Out
+          </button>
+        </div>
+
         <div id="cart_container" class="grid grid-cols-3 gap-5"></div>
       </div>
       <div class="col-span-4">
@@ -30,6 +26,13 @@
             <span id="cart_count"></span>
           </h1>
           <div id="cart_view" class="min-h-[500px]"></div>
+          <div class="w-full flex justify-between items-center py-3">
+            <h1 class="font-semibold text-3xl">Total Price</h1>
+            <div class="text-lg font-semibold items-center">
+              <h1 id="Total_price" class="text-lg">0</h1>
+              MMK
+            </div>
+          </div>
           <button
             id="confirn_order"
             class="bg-red-500 text-white rounded-full px-4 py-2 w-full"

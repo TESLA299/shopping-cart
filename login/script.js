@@ -4,6 +4,9 @@ const password = document.querySelector("#password");
 const accept = document.querySelector("#accept");
 const emailerror = document.querySelector("#error");
 const passworderror = document.querySelector("#error1");
+if (localStorage.getItem("email") || sessionStorage.getItem("email")) {
+  window.location.href = "/login";
+}
 loginform.addEventListener("submit", (event) => {
   event.preventDefault();
   if (!email.value.length) {
@@ -25,7 +28,11 @@ loginform.addEventListener("submit", (event) => {
       email: email.value,
       password: password.value,
     };
-    localStorage.setItem("email", JSON.stringify(loginData));
-    window.location.href = "/";
+    if (accept.checked) {
+      localStorage.setItem("email", JSON.stringify(loginData));
+    } else {
+      sessionStorage.setItem("email", JSON.stringify(loginData));
+    }
   }
+  window.location.href = "/";
 });
